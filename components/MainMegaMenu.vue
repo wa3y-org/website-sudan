@@ -12,7 +12,7 @@
       <v-divider></v-divider>
       <v-card-text class="mega-menu-wrap">
         <v-container fluid class="mega-menu-content">
-          <div class="my-4"></div>
+          <div class="my-8"></div>
           <v-row>
             <v-col>
               <div class="pa-8" style="border: 0px solid white; border-radius: 7px;">
@@ -83,7 +83,7 @@
               </div>
             </v-col>
           </v-row>
-          <v-divider color="white" class="my-12"></v-divider>
+          <div color="white" class="my-16"></div>
           <v-row>
 
             <v-col>
