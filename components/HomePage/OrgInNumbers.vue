@@ -7,12 +7,12 @@
       </h2>
       <v-container class="my-16">
         <v-row>
-          <v-col v-for="item of counterItems">
-            <div class="text-center">
+          <v-col v-for="item of counterItems" cols="12" xl="4" lg="4" md="4" sm="12" xs="12" class="mb-12">
+            <div class="text-center py-12 ma-2 rounded-xl" style="border: 2px solid white;">
               <ClientOnly>
                 <AnimatedCounter :value="item.count" :duration="counterDuration" class="text-h1 font-weight-black" />
               </ClientOnly>
-              <p class="text-h3 mt-2">{{ item.title }}</p>
+              <p class="text-h3 mt-2" >{{ item.title }}</p>
             </div>
           </v-col>
         </v-row>
