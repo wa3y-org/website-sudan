@@ -1,11 +1,23 @@
 <template>
-  <Home-page-intro />
+  <home-page-intro />
+  <div class="home-page-sections">
+    <home-page-about-us />
+    <home-page-what-we-do />
+    <home-page-discover-projects />
+    <home-page-blog-and-news />
+  </div>
 </template>
 
 <script lang="ts" setup>
 
 </script>
 
-<style>
-
+<style scoped>
+.home-page-sections {
+  height: max-content;
+  position: relative;
+  top: -150px;
+  left: 0;
+  
+}
 </style>

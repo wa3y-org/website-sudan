@@ -12,7 +12,8 @@
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "nuxt": "^3.12.4",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-animated-counter": "^0.3.0"
   },
   "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72",
   "devDependencies": {

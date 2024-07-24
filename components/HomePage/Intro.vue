@@ -16,7 +16,7 @@
         <hr class="mt-4 mb-6"
           style="width: 9rem; height: 0.6rem; background-color: #da291c; border: 0px; border-radius: 1rem;">
 
-        <p class="my-4 text-h6">
+        <p class="mt-4 text-h6">
           Raising awareness and educating young people about social issues and international solidarity is a major
           challenge, particularly given the serious global challenges they face. To play its part, AFD has developed
           the Tilt website, which is aimed at 15-25 year olds, as well as a range of educational tools for students

@@ -1,6 +1,6 @@
 <template>
   <MainAppBar />
-  <v-main class="text-red text-h1" style="height: 200vh;">
+  <v-main>
     <NuxtPage />
   </v-main>
   <v-footer>
