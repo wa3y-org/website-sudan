@@ -3,9 +3,7 @@
   <v-main>
     <NuxtPage />
   </v-main>
-  <v-footer>
-    the main footer
-  </v-footer>
+  <main-footer />
 </template>
 
 <script lang="ts" setup>
