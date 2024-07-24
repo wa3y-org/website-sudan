@@ -11,7 +11,7 @@
     </span>
     <v-spacer></v-spacer>
     <!-- Main Navigation Buttons Section -->
-    <div>
+    <div v-if="mdAndUp">
       <v-toolbar color="transparent" height="80">
 
         <v-spacer></v-spacer>
@@ -81,11 +81,14 @@ function useAppBarBgController() {
 </script>
 
 <script lang="ts" setup>
-
+import { useDisplay } from "vuetify";
 const appBarBg = useAppBarBgController().appBarBg;
 
 // mage menu modal controller
 const megaMenuModal = useModal();
+
+// display
+const { mdAndUp } = useDisplay();
 </script>
 
 <style lang="scss" scoped></style>
