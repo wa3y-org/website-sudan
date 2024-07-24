@@ -8,7 +8,7 @@
         <v-col v-for="j in 3">
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
-          <v-card v-bind="props" :elevation="isHovering ? 8 : 0" flat min-height="400" class="mb-8">
+          <v-card v-bind="props" :elevation="isHovering ? 10 : 1" flat min-height="400" class="mb-8">
             <v-img src="/public/images/blog_2.jpg" height="200" cover></v-img>
             <v-card-title class="font-weight-black text-h6 text-wrap">
               <p class="d-flex align-center text-wrap mt-2">

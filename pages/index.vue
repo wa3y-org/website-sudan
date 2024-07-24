@@ -6,6 +6,7 @@
     <home-page-discover-projects />
     <home-page-blog-and-news />
     <home-page-org-in-numbers />
+    <home-page-resources />
   </div>
 </template>
 
@@ -17,7 +18,7 @@
 .home-page-sections {
   height: max-content;
   position: relative;
-  top: -150px;
+  top: -220px;
   left: 0;
   
 }

@@ -9,8 +9,9 @@
         <v-row>
           <v-col v-for="item of counterItems">
             <div class="text-center">
-              <AnimatedCounter :value="item.count" :duration="counterDuration"
-                class="text-h1 font-weight-black" />
+              <ClientOnly>
+                <AnimatedCounter :value="item.count" :duration="counterDuration" class="text-h1 font-weight-black" />
+              </ClientOnly>
               <p class="text-h3 mt-2">{{ item.title }}</p>
             </div>
           </v-col>
@@ -21,7 +22,7 @@
 </template>
 
 <script lang="ts" setup>
-const counterDuration = 500;
+const counterDuration = 1000;
 
 const counterItems = [
   {
