@@ -7,6 +7,10 @@
           <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
         </span>
         <v-spacer></v-spacer>
+        <v-btn color="success" variant="plain" icon="mdi-translate mdi-24px"></v-btn>
+        <span class="mx-1"></span>
+        <v-btn color="primary" variant="plain" icon="mdi-theme-light-dark mdi-24px"></v-btn>
+        <span class="mx-1"></span>
         <v-btn color="error" icon="mdi-menu-close mdi-36px" @click="close" />
       </v-toolbar>
       <v-divider></v-divider>
