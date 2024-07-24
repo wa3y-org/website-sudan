@@ -2,7 +2,7 @@
   <div class="what-we-do-section pb-12">
     <v-container class="mt-0 pt-0">
       <v-row class="mt-0 pt-0">
-        <v-col class="py-8 px-4" cols="5" md="5" sm="12">
+        <v-col class="py-8 px-4" cols="12" xl="4"  md="5" sm="12">
           <h1 class="text-h4 font-weight-bold">What We Do</h1>
           <hr class="mt-4 mb-6"
             style="width: 6rem; height: 0.4rem; background-color: #009edb; border: 0px; border-radius: 1rem;">
