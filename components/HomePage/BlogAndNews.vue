@@ -5,7 +5,7 @@
     </h2>
     <v-container>
       <v-row>
-        <v-col v-for="j in 6" xs="12" sm="12" md="6" lg="4" xxl="3">
+        <v-col cols="12" v-for="j in 6" xs="12" sm="12" md="6" lg="4" xxl="3">
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
               <v-card v-bind="props" :elevation="isHovering ? 10 : 1" flat min-height="400" class="mb-8">
