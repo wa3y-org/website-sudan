@@ -22,6 +22,8 @@
 </template>
 
 <script lang="ts" setup>
+import AnimatedCounter from 'vue-animated-counter';
+
 const counterDuration = 1000;
 
 const counterItems = [
