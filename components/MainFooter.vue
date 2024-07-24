@@ -12,19 +12,13 @@
             <p>
             <ul class="links-group">
               <li v-for="(link) of ourOrganizationLinks">
-                <v-hover>
-                  <template v-slot:default="{ isHovering, props }">
-                    <nuxt-link v-bind="props" class="our-link " :href="link.url">
-                      <v-expand-x-transition tag="span" v-show="isHovering">
-                        <hr
-                          style="display: inline-block ;width: 1.7rem; height: 1rem; background-color: rgb(218, 41, 28); border: 0px; border-radius: .2rem;" />
-                      </v-expand-x-transition>
+                
+                    <nuxt-link class="our-link " :href="link.url">
+                      
                       <span class="mx-2">
                         {{ link.name }}
                       </span>
                     </nuxt-link>
-                  </template>
-                </v-hover>
               </li>
             </ul>
             </p>
@@ -38,19 +32,11 @@
             <p>
             <ul class="links-group">
               <li v-for="(link) of ourPagesLinks">
-                <v-hover>
-                  <template v-slot:default="{ isHovering, props }">
-                    <nuxt-link v-bind="props" class="our-link " :href="link.url">
-                      <v-expand-x-transition tag="span" v-show="isHovering">
-                        <hr
-                          style="display: inline-block ;width: 1.7rem; height: 1rem; background-color: rgb(218, 41, 28); border: 0px; border-radius: .2rem;" />
-                      </v-expand-x-transition>
-                      <span class="mx-2">
-                        {{ link.name }}
-                      </span>
-                    </nuxt-link>
-                  </template>
-                </v-hover>
+                <nuxt-link class="our-link " :href="link.url">
+                  <span class="">
+                    {{ link.name }}
+                  </span>
+                </nuxt-link>
               </li>
             </ul>
             </p>
@@ -73,7 +59,7 @@
 
             </p>
             <div class="mt-12">
-              <span >
+              <span>
                 <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
               </span>
             </div>
@@ -125,7 +111,7 @@ const ourSocialMedia = [
   text-decoration: none;
   color: #12095a;
   list-style-type: none;
-  transition: 0.3s;
+  
   font-size: 1.25rem;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
   text-rendering: optimizeLegibility;
@@ -134,5 +120,6 @@ const ourSocialMedia = [
 
 .our-link:hover {
   font-weight: bolder;
+  transition: 0.3s;
 }
 </style>
