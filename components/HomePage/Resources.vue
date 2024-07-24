@@ -9,8 +9,8 @@
       </p>
     </div>
     <v-container>
-      <v-row v-for="i in 2">
-        <v-col v-for="j in 3">
+      <v-row >
+        <v-col cols="12" v-for="j in 6" xs="12" sm="12" md="6" lg="4" xxl="3">
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
               <v-card v-bind="props" :elevation="isHovering ? 8 : 2" flat min-height="300" class="mb-8">
