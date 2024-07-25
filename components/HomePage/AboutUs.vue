@@ -6,13 +6,15 @@
         {{ aboutOurOrg }}
       </p>
       <div class="text-center">
-        <v-btn color="primary" append-icon="mdi-arrow-right" rounded="lg" size="x-large" variant="flat" class="mt-8">Read
-          More</v-btn>
+        <nuxt-link to="/about-us">
+          <v-btn color="primary" append-icon="mdi-arrow-right" rounded="lg" size="x-large" variant="flat" class="mt-8">
+            Read More
+          </v-btn>
+        </nuxt-link>
       </div>
     </v-container>
 
   </div>
- 
 </template>
 
 <script lang="ts" setup>
@@ -32,6 +34,6 @@ const aboutOurOrg = `
 
 <style scoped>
 .about-us-section {
-  background-color: #f5f5f5;
+  background-color: #cbcbcb;
 }
 </style>
