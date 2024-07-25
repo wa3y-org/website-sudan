@@ -86,8 +86,8 @@ const testimonials = [
 ];
 </script>
 
-<style>
+<style scoped>
 .testimonials-sections {
-  background-color: #FFF9C4;
+  background-color: #b9f6ca;
 }
 </style>

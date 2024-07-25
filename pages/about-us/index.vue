@@ -7,6 +7,7 @@
     <about-us-page-vision-and-mission />
     <about-us-page-partners />
     <about-us-page-testimonials />
+    <about-us-page-team />
   </div>
 </template>
 
