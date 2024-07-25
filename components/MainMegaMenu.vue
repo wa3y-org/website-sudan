@@ -130,21 +130,20 @@ const emit = defineEmits(['close'])
 function close() {
   emit('close');
 }
-
 const ourOrganizationLinks = [
   { name: "About Us", url: "/about-us" },
-  { name: "Contact Us", url: "#" },
-  { name: "Our Partners", url: "#" },
-  { name: "Our Communities", url: "#" },
-  { name: "Our Projects", url: "#" },
-]
+  { name: "Contact Us", url: "/contact-us" },
+  { name: "Our Partners", url: "/our-partners" },
+  { name: "Our Communities", url: "/our-communities" },
+  { name: "Our Projects", url: "/our-projects" },
+];
 
 const resourcesLinks = [
-  { name: "News", url: "#" },
-  { name: "Blog", url: "#" },
-  { name: "Podcasts", url: "#" },
-  { name: "Campaigns", url: "#" },
-  { name: "Videos", url: "#" },
+  { name: "News", url: "/blog?tags=news" },
+  { name: "Blog", url: "/blog" },
+  { name: "Podcasts", url: "/resources" },
+  { name: "Campaigns", url: "/resources" },
+  { name: "Videos", url: "/resources" },
 ]
 const ourSocialMedia = [
   { "name": "Email", "Icon": "mdi-email", "url": "" },
