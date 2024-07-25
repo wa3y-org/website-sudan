@@ -7,8 +7,9 @@
         <v-col cols="12" xl="7" lg="6">
           <div class=" elevation-3 rounded-xl" style="overflow: hidden;">
             <div v-for="(objective, i) of objectives">
-              <v-card class="pa-4" rounded="0" :elevation="0" :color="isSelectedObjective(i)  && !mdAndDown ? 'primary' : 'transparent'"
-                :variant="isSelectedObjective(i)  && !mdAndDown ? 'tonal' : 'flat'" @click="selectObjective(i)">
+              <v-card class="pa-4" rounded="0" :elevation="0"
+                :color="isSelectedObjective(i) && !mdAndDown ? 'primary' : 'transparent'"
+                :variant="isSelectedObjective(i) && !mdAndDown ? 'tonal' : 'flat'" @click="selectObjective(i)">
                 <v-card-title :class="isSelectedObjective(i) ? 'font-weight-black' : ''">
                   {{ objective.title }}
                 </v-card-title>
@@ -34,7 +35,7 @@
               <div style="height: 100%;" class="d-flex align-center">
                 <v-card color="transparent" elevation="0">
                   <v-card-text class="text-justify">
-                    <h1 class="mb-8">{{ objective.title }}</h1>
+                    <h1 class="mb-2">{{ objective.title }}</h1>
                     {{ objective.details }}
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
