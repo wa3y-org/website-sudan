@@ -2,6 +2,7 @@
   <div>
     <about-us-page-intro />
     <about-us-page-our-story />
+    <about-us-page-objectives />
   </div>
 </template>
 
