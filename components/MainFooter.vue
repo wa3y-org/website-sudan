@@ -60,9 +60,11 @@
 
             </p>
             <div class="mt-12">
-              <span>
-                <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
-              </span>
+              <nuxt-link to="/">
+                <span>
+                  <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
+                </span>
+              </nuxt-link>
             </div>
           </div>
         </v-col>
@@ -73,7 +75,7 @@
 
 <script lang="ts" setup>
 const ourOrganizationLinks = [
-  { name: "About Us", url: "#" },
+  { name: "About Us", url: "/about-us" },
   { name: "Contact Us", url: "#" },
   { name: "Our Partners", url: "#" },
   { name: "Our Communities", url: "#" },
