@@ -3,6 +3,7 @@
     <about-us-page-intro />
     <about-us-page-our-story />
     <about-us-page-objectives />
+    <about-us-page-message />
   </div>
 </template>
 
