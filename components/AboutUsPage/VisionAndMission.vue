@@ -70,9 +70,9 @@ const { mdAndUp } = useDisplay();
 
 .mission-section {
   background: rgb(237, 231, 246);
-  background: -moz-linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 1) 100%);
-  background: -webkit-linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 1) 100%);
-  background: linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 1) 100%);
+  background: -moz-linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 0.8596170890231092) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 0.8596170890231092) 100%);
+  background: linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 0.8596170890231092) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ede7f6", endColorstr="#7e57c2", GradientType=1);
 }
 </style>
