@@ -96,8 +96,10 @@
                 <a :href="media.url" v-for="media of ourSocialMedia" class="mx-6">
                   <v-hover>
                     <template v-slot:default="{ isHovering, props }">
-                      <v-icon v-bind="props" :color="isHovering ? '#d20015CC' : 'white'">{{ media.Icon }}
-                        mdi-48px</v-icon>
+                      <span class="d-inline-block my-2 mx-1">
+                        <v-icon v-bind="props" :color="isHovering ? '#d20015CC' : 'white'">{{ media.Icon }}
+                          mdi-48px</v-icon>
+                      </span>
                     </template>
                   </v-hover>
                 </a>
