@@ -12,7 +12,7 @@
                 <v-card-title :class="isSelectedObjective(i) ? 'font-weight-black' : ''">
                   {{ objective.title }}
                 </v-card-title>
-                <v-card-text v-if="mdAndDown">
+                <v-card-text v-if="mdAndDown" class="text-justify">
                   {{ objective.details }}
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -33,7 +33,7 @@
               :value="generateObjectiveId(i)" class="fill-height">
               <div style="height: 100%;" class="d-flex align-center">
                 <v-card color="transparent" elevation="0">
-                  <v-card-text>
+                  <v-card-text class="text-justify">
                     <h1 class="mb-8">{{ objective.title }}</h1>
                     {{ objective.details }}
                     <p>
@@ -83,7 +83,9 @@ function generateObjectiveId(index: number): string {
 
 function selectObjective(index: number) {
   if (mdAndDown.value) return;
-  clearWaiting();
+  if (timeOutId) {
+    clearWaiting();
+  }
   objectiveTab.value = generateObjectiveId(index);
   currentObjectiveIndex.value = index;
   waitThenPlayNext();
@@ -110,9 +112,17 @@ onMounted(() => {
 
 });
 
+
 onUnmounted(() => {
   clearWaiting();
 });
+
+
+watch(() => mdAndDown.value, () => {
+  if (!mdAndDown.value) {
+    selectObjective(0);
+  }
+})
 
 </script>
 
