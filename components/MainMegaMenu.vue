@@ -3,9 +3,12 @@
     <v-card>
 
       <v-toolbar color="white" class="px-4" height="80">
-        <span>
-          <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
-        </span>
+        <nuxt-link to="/">
+
+          <span>
+            <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
+          </span>
+        </nuxt-link>
         <v-spacer></v-spacer>
         <v-btn color="success" variant="plain" icon="mdi-translate mdi-24px"></v-btn>
         <span class="mx-1"></span>
@@ -42,7 +45,7 @@
                   <li v-for="(link) of ourOrganizationLinks">
                     <v-hover>
                       <template v-slot:default="{ isHovering, props }">
-                        <nuxt-link v-bind="props" class="our-link " :href="link.url">
+                        <nuxt-link v-bind="props" class="our-link " :to="link.url">
                           <v-expand-x-transition tag="span" v-show="isHovering">
                             <hr
                               style="display: inline-block ;width: 1.7rem; height: 1rem; background-color: rgb(218, 41, 28); border: 0px; border-radius: .2rem;" />
@@ -96,8 +99,10 @@
                 <a :href="media.url" v-for="media of ourSocialMedia" class="mx-6">
                   <v-hover>
                     <template v-slot:default="{ isHovering, props }">
-                      <v-icon v-bind="props" :color="isHovering ? '#d20015CC' : 'white'">{{ media.Icon }}
-                        mdi-48px</v-icon>
+                      <span class="d-inline-block my-2 mx-1">
+                        <v-icon v-bind="props" :color="isHovering ? '#d20015CC' : 'white'">{{ media.Icon }}
+                          mdi-48px</v-icon>
+                      </span>
                     </template>
                   </v-hover>
                 </a>
@@ -127,7 +132,7 @@ function close() {
 }
 
 const ourOrganizationLinks = [
-  { name: "About Us", url: "#" },
+  { name: "About Us", url: "/about-us" },
   { name: "Contact Us", url: "#" },
   { name: "Our Partners", url: "#" },
   { name: "Our Communities", url: "#" },
@@ -147,6 +152,10 @@ const ourSocialMedia = [
   { "name": "X", "Icon": "mdi-twitter", "url": "" },
   { "name": "YouTube", "Icon": "mdi-youtube", "url": "" },
 ]
+
+const route = useRoute();
+
+watch(() => route.fullPath, close);
 </script>
 
 <style scoped>
