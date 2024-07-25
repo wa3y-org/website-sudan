@@ -23,11 +23,15 @@
             us</v-btn>
         </nuxt-link>
         <span class="mx-1"></span>
-        <v-btn size="x-large" rounded="pill" class="px-8" color="primary"
-          prepend-icon="mdi-invoice-text-outline">blog</v-btn>
+        <nuxt-link to="/blog">
+          <v-btn size="x-large" rounded="pill" class="px-8" color="primary"
+            prepend-icon="mdi-invoice-text-outline">blog</v-btn>
+        </nuxt-link>
         <span class="mx-1"></span>
-        <v-btn size="x-large" rounded="pill" class="px-8" color="primary" prepend-icon="mdi-land-fields">projects</v-btn>
-
+        <nuxt-link to="/our-projects">
+          <v-btn size="x-large" rounded="pill" class="px-8" color="primary"
+            prepend-icon="mdi-land-fields">projects</v-btn>
+        </nuxt-link>
       </v-toolbar>
     </div>
     <v-spacer></v-spacer>
