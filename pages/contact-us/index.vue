@@ -1,6 +1,7 @@
 <template>
+  <contact-us-page-intro />
   <div class="contact-us-page-sections">
-    <ContactUsPageIntro />
+    <contact-us-page-offices />
   </div>
 </template>
 
@@ -10,6 +11,9 @@
 
 <style scoped>
 .contact-us-page-sections {
-  
+  height: max-content;
+  position: relative;
+  top: -0px;
+  left: 0;
 }
 </style>
