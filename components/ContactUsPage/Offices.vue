@@ -3,7 +3,7 @@
     <h3 class="text-h3 text-center mb-16">
       Where to find us
     </h3>
-    <div v-for="(office, i) of offices" :key="office.address + i">
+    <div v-for="(office, i) of offices" :key="office.name + i">
       <div class="d-flex align-center justify-center office-name py-12 text-center font-weight-black text-h3">
         {{ office.name }}
       </div>
