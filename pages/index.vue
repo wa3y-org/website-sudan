@@ -20,6 +20,5 @@
   position: relative;
   top: -220px;
   left: 0;
-  
 }
 </style>

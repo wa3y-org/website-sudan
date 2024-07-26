@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <coming-soon />
+  <div class="contact-us-page-sections">
+    <ContactUsPageIntro />
   </div>
 </template>
 
@@ -8,6 +8,8 @@
 
 </script>
 
-<style>
-
+<style scoped>
+.contact-us-page-sections {
+  
+}
 </style>
