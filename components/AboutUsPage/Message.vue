@@ -22,5 +22,5 @@
 
 <style scoped>
 .message-section {
-  background-color: #F3E5F5;
+  background-color: #F5F5F5;
 }</style>

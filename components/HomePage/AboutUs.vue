@@ -34,6 +34,6 @@ const aboutOurOrg = `
 
 <style scoped>
 .about-us-section {
-  background-color: #cbcbcb;
+  background-color: #FFF8E1;
 }
 </style>
