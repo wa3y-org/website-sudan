@@ -2,7 +2,42 @@
   <v-footer class="main-footer py-12">
     <v-container class="">
       <v-row>
-        <v-col cols="12" xxl="4" xl="4" lg="4" md="6" sm="12" xs="12">
+        <v-col cols="12" xxl="5" xl="5" lg="5" md="6" sm="12" xs="12">
+          <div class="pa-8" style="text-justify: top; vertical-align: top;">
+
+            <div class="d-inline-block" style="text-justify: top; vertical-align: top; padding: 65;">
+              <nuxt-link to="/">
+                <span>
+                  <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
+                </span>
+              </nuxt-link>
+              <p class="mt-8">
+                A Voluntary organization aimed at educating and raising awareness within our communities regarding rights,
+                citizenship issues, and the active role citizens should undertake towards their society and nation.
+              </p>
+            </div>
+
+            <hr class="my-8"
+              style="width: 6rem; height: 0.3rem; background-color: #da291c; border: 0px; border-radius: 1rem;">
+
+            <p class="mt-8">
+              <a :href="media.url" v-for="media of ourSocialMedia">
+                <v-hover>
+                  <template v-slot:default="{ isHovering, props }">
+                    <span class="d-inline-block my-2">
+                      <v-icon size="65" v-bind="props" :color="isHovering ? '#12095a' : '#d20015CC'">{{ media.Icon }}
+                      </v-icon>
+                    </span>
+                    <span class="mx-2"></span>
+                  </template>
+                </v-hover>
+              </a>
+
+            </p>
+
+          </div>
+        </v-col>
+        <v-col cols="12" xxl="3" xl="3" lg="3" md="6" sm="12" xs="12">
           <div class="pa-8">
             <h1 class="font-weight-black text-h3 mb-4">Pages</h1>
             <hr class="mb-8"
@@ -20,7 +55,7 @@
             </p>
           </div>
         </v-col>
-        <v-col cols="12" xxl="4" xl="4" lg="4" md="6" sm="12" xs="12">
+        <v-col cols="12" xxl="3" xl="3" lg="3" md="6" sm="12" xs="12">
 
           <div class="pa-8">
             <h1 class="font-weight-black text-h3 mb-4">Organization</h1>
@@ -41,33 +76,7 @@
             </p>
           </div>
         </v-col>
-        <v-col cols="12" xxl="4" xl="4" lg="4" md="6" sm="12" xs="12">
-          <div class="pa-8">
-            <h1 class="font-weight-black text-h3 mb-4">Social Media</h1>
-            <hr class="mb-8"
-              style="width: 6rem; height: 0.3rem; background-color: #da291c; border: 0px; border-radius: 1rem;">
-            <p>
-              <a :href="media.url" v-for="media of ourSocialMedia" class="ma-6">
-                <v-hover>
-                  <template v-slot:default="{ isHovering, props }">
-                    <span class="d-inline-block my-2">
-                      <v-icon v-bind="props" :color="isHovering ? '#12095a' : '#d20015CC'">{{ media.Icon }}
-                        mdi-48px</v-icon>
-                    </span>
-                  </template>
-                </v-hover>
-              </a>
 
-            </p>
-            <div class="mt-12">
-              <nuxt-link to="/">
-                <span>
-                  <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
-                </span>
-              </nuxt-link>
-            </div>
-          </div>
-        </v-col>
       </v-row>
     </v-container>
   </v-footer>
