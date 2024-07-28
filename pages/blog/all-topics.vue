@@ -16,7 +16,6 @@
               </v-card-text>
               <v-divider></v-divider>
               <v-card-actions>
-                <v-spacer></v-spacer>
                 <span class="text-grey mx-2"> {{ topic.articles_count }} Article</span>
               </v-card-actions>
             </v-card>
