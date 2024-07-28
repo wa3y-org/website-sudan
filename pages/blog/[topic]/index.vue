@@ -1,44 +1,26 @@
 <template>
   <div>
-    <h1 class="text-h3 text-center font-weight-black pt-16 pb-8">
-      Wa3y blog
-    </h1>
-
-    <v-container>
-      <div class="d-flex justify-center align-center">
-        <v-divider></v-divider>
-        <span class="font-weight-bold text-h6 text-success mx-6">Pinned</span>
-        <v-divider></v-divider>
-      </div>
-      <blog-page-pinned-article-card v-for="i in 1" :article="pinnedArticleExample1" />
-      <div class="d-flex justify-center align-center mt-4">
-        <v-divider></v-divider>
-        <span class="font-weight-bold text-h6 mx-6">Articles</span>
-        <v-divider></v-divider>
-      </div>
+    <v-container >
       <v-row>
-        <v-col cols="12" xxl="3" xl="4" lg="6" md="6" v-for="i in 4">
-          <BlogPageArticleCard :article="pinnedArticleExample1" />
+        <v-col>
+          <h3 class="text-h4 text-center font-weight-bold pt-16 pb-8">
+            Articles from topic <span class="text-indigo">{{ topicName }}</span>
+          </h3>
         </v-col>
       </v-row>
       <v-row class="my-12">
-        <v-col>
-          <div class="text-center">
-            
-            <v-btn color="primary" size="x-large">Load More</v-btn>
-          </div>
+        <v-col cols="12" xxl="3" xl="4" lg="6" md="6" v-for="i in 4">
+          <BlogPageArticleCard :article="pinnedArticleExample1" />
         </v-col>
       </v-row>
     </v-container>
   </div>
 </template>
 
-<script>
-
-</script>
-
 <script lang="ts" setup>
 import { Article } from "@/app/models/article";
+
+const topicName = useRoute().params.topic.toString().replaceAll('_', ' ');
 
 const pinnedArticleExample1 = new Article();
 pinnedArticleExample1.author = { name: "Ayman Nageeb" };
