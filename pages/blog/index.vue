@@ -13,7 +13,9 @@
           </nuxt-link>
         </span>
         <v-spacer></v-spacer>
-        <v-btn color="indigo" elevation="2" variant="flat">Show All Topics</v-btn>
+        <NuxtLink to="/blog/all-topics">
+          <v-btn color="indigo" elevation="2" variant="flat">Show All Topics</v-btn>
+        </NuxtLink>
       </v-toolbar>
       <div class="d-flex justify-center align-center mt-8">
         <v-divider></v-divider>
