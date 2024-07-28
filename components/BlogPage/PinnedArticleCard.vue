@@ -32,4 +32,4 @@ defineProps({
 
 </script>
 
-<style></style>
+<style></style>~/utils/app/models/article

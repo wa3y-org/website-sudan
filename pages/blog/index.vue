@@ -21,6 +21,14 @@
           <BlogPageArticleCard :article="pinnedArticleExample1" />
         </v-col>
       </v-row>
+      <v-row class="my-12">
+        <v-col>
+          <div class="text-center">
+            
+            <v-btn color="primary" size="x-large">Load More</v-btn>
+          </div>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
