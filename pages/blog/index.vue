@@ -5,16 +5,16 @@
     </h1>
     <v-container>
       <v-toolbar class="px-4" rounded="lg">
-        <span v-for="(topic, i) of topics" class="mx-2 text-indigo font-weight-bold">
-          <nuxt-link :to="`/blog/${topic.name.trim().replaceAll('\s', ' ').replaceAll(' ', '_')}`">
-
-            <span v-if="i > 0" class="mx-2"> | </span>
+        <span class="mx-2 text-indigo font-weight-bold">
+          <nuxt-link v-for="(topic, i) of topics" :to="`/blog/${topic.name.trim().replaceAll('\s', ' ').replaceAll(' ', '_')}`">
             {{ topic.name }}
+            <span class="mx-2 font-weight-black"> | </span>
           </nuxt-link>
+          <v-icon>mdi-dots-horizontal</v-icon>
         </span>
         <v-spacer></v-spacer>
         <NuxtLink to="/blog/all-topics">
-          <v-btn color="indigo" elevation="2" variant="flat">Show All Topics</v-btn>
+          <v-btn size="large" color="indigo" >Show All Topics</v-btn>
         </NuxtLink>
       </v-toolbar>
       <div class="d-flex justify-center align-center mt-8">
