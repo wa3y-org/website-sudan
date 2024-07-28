@@ -3,9 +3,21 @@
     <h1 class="text-h3 text-center font-weight-black pt-16 pb-8">
       Wa3y blog
     </h1>
-
     <v-container>
-      <div class="d-flex justify-center align-center">
+      <v-toolbar class="px-4" rounded="lg">
+        <span v-for="(topic, i) of topics" class="mx-2 text-indigo font-weight-bold">
+          <nuxt-link :to="`/blog/${topic.name.trim().replaceAll('\s', ' ').replaceAll(' ', '_')}`">
+
+            <span v-if="i > 0" class="mx-2"> | </span>
+            {{ topic.name }}
+          </nuxt-link>
+        </span>
+        <v-spacer></v-spacer>
+        <NuxtLink to="/blog/all-topics">
+          <v-btn color="indigo" elevation="2" variant="flat">Show All Topics</v-btn>
+        </NuxtLink>
+      </v-toolbar>
+      <div class="d-flex justify-center align-center mt-8">
         <v-divider></v-divider>
         <span class="font-weight-bold text-h6 text-success mx-6">Pinned</span>
         <v-divider></v-divider>
@@ -24,7 +36,7 @@
       <v-row class="my-12">
         <v-col>
           <div class="text-center">
-            
+
             <v-btn color="primary" size="x-large">Load More</v-btn>
           </div>
         </v-col>
@@ -52,7 +64,13 @@ pinnedArticleExample1.short_text = `
    Ipsam facilis animi unde saepe, quisquam cumque.
 `;
 pinnedArticleExample1.updated = '2024-07-25'
-pinnedArticleExample1.cover_image = '/images/visuel-sensibilisation.jpg'
+pinnedArticleExample1.cover_image = '/images/visuel-sensibilisation.jpg';
+
+const topics = [
+  { name: 'topic one' },
+  { name: 'topic two' },
+  { name: 'topic three' },
+]
 </script>
 
 <style></style>
