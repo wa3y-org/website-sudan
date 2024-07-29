@@ -1,6 +1,7 @@
 <template>
   <div>
-    <coming-soon />
+    <resources-page-intro />
+    <resources-page-explore-resources />
   </div>
 </template>
 
@@ -8,6 +9,4 @@
 
 </script>
 
-<style>
-
-</style>
+<style></style>
