@@ -25,7 +25,7 @@
             </div>
           </v-col>
           <v-col>
-            <v-img rounded="xl" :aspect-ratio="9/6" cover width="100%" :src="article.cover_image"></v-img>
+            <v-img rounded="xl" :aspect-ratio="9 / 6" cover width="100%" :src="article.cover_image"></v-img>
           </v-col>
         </v-row>
       </v-container>
@@ -47,7 +47,7 @@
                 commodi eligendi repellendus, praesentium reiciendis saepe autem nulla dolorum rem,
                 tempora dicta. At voluptas iure alias minus necessitatibus?
               </p>
-              <iframe v-if="i == 3" style="width: 100%; aspect-ratio: 3/1;" class="my-8 elevation-2 rounded-xl" 
+              <iframe v-if="i == 3" style="width: 100%; aspect-ratio: 3/1;" class="my-8 elevation-2 rounded-xl"
                 src="https://www.youtube.com/embed/cMz5jX373HQ?si=xa8K1ybUHDnT2CWh" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -57,6 +57,22 @@
         </v-row>
       </v-container>
     </article>
+    <div class="similar-articles-section py-16">
+      <v-container>
+        <v-row class="my-8">
+          <v-col>
+            <h3 class="text-h3">
+              Similar Articles
+            </h3>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12" xxl="3" xl="4" lg="6" md="6" v-for="i in 2">
+            <BlogPageArticleCard :article="article" />
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
   </div>
 </template>
 
@@ -82,5 +98,9 @@ article.cover_image = '/images/visuel-sensibilisation.jpg';
 <style scoped lang="scss">
 .article-header {
   background-color: #F3E7DB;
+}
+
+.similar-articles-section {
+  background-color: #F5F5F5;
 }
 </style>
