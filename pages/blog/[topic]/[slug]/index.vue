@@ -25,7 +25,7 @@
             </div>
           </v-col>
           <v-col>
-            <v-img class="my-8" rounded="xl" :aspect-ratio="9 / 6" cover width="100%" :src="article.cover_image"></v-img>
+            <v-img class="my-8" rounded="xl" :aspect-ratio="16 / 9" cover width="100%" :src="article.cover_image"></v-img>
           </v-col>
         </v-row>
       </v-container>
