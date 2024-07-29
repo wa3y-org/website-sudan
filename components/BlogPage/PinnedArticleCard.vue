@@ -4,7 +4,7 @@
       <template v-slot:default="{ isHovering, props }">
         <v-card class="my-8" v-bind="props" :elevation="isHovering ? 8 : 1">
           <v-row>
-            <v-col class="pa-8">
+            <v-col class="pa-8" cols="12" xxl="3" xl="4" lg="6" md="6">
               <p class="text-indigo font-weight-black">
                 <nuxt-link :to="`/blog/${article.topic.name.trim().replaceAll('\s', ' ').replaceAll(' ', '_')}`">
                   {{ article.topic.name }}
@@ -23,7 +23,7 @@
               </p>
             </v-col>
             <v-col>
-              <v-img cover height="300" :src="article.cover_image"></v-img>
+              <v-img cover width="100%" height="100%" :src="article.cover_image"></v-img>
             </v-col>
           </v-row>
         </v-card>

@@ -4,7 +4,7 @@
       <template v-slot:default="{ isHovering, props }">
         <v-card class="my-8" v-bind="props" :elevation="isHovering ? 8 : 1">
           <v-img cover height="300" :src="article.cover_image"></v-img>
-          <v-card-text class="pa-8" style="height: 18rem;">
+          <v-card-text class="pa-8" style="min-height: 18rem;">
             <p class="text-indigo font-weight-black">
               <nuxt-link :to="`/blog/${article.topic.name.trim().replaceAll('\s', ' ').replaceAll(' ', '_')}`">
                 {{ article.topic.name }}
