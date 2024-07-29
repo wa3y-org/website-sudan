@@ -20,7 +20,7 @@
             {{ partner.text }}
           </p>
           <a v-for="link of partner.links" :href="link.link" style="text-decoration: none;">
-            <v-card flat class="mt-1">
+            <v-card flat class="mt-1" variant="text" color="#da291c">
               <v-card-text>
                 <v-icon size="36">{{ link.icon }}</v-icon>
                 <span class="mx-4 font-weight-bold text-title">{{ link.name }}</span>
