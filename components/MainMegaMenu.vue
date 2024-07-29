@@ -139,7 +139,7 @@ const ourOrganizationLinks = [
 ];
 
 const resourcesLinks = [
-  { name: "News", url: "/blog?tags=news" },
+  { name: "News", url: "/blog/news" },
   { name: "Blog", url: "/blog" },
   { name: "Podcasts", url: "/resources" },
   { name: "Campaigns", url: "/resources" },

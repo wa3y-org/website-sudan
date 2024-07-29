@@ -47,7 +47,7 @@
                 commodi eligendi repellendus, praesentium reiciendis saepe autem nulla dolorum rem,
                 tempora dicta. At voluptas iure alias minus necessitatibus?
               </p>
-              <iframe v-if="i == 3" style="width: 100%; aspect-ratio: 9/6;" class="my-8 elevation-2 rounded-xl"
+              <iframe v-if="i == 3" style="width: 100%; aspect-ratio: 16/9;" class="my-8 elevation-2 rounded-xl"
                 src="https://www.youtube.com/embed/cMz5jX373HQ?si=xa8K1ybUHDnT2CWh" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

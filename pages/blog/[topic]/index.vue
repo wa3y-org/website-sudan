@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container >
+    <v-container>
       <v-row>
         <v-col>
           <h3 class="text-h4 text-center font-weight-bold pt-16 pb-8">
@@ -11,6 +11,13 @@
       <v-row class="my-12">
         <v-col cols="12" xxl="3" xl="4" lg="6" md="6" v-for="i in 4">
           <BlogPageArticleCard :article="pinnedArticleExample1" />
+        </v-col>
+      </v-row>
+      <v-row class="my-12">
+        <v-col>
+          <div class="text-center">
+            <v-btn color="primary" size="x-large">Load More</v-btn>
+          </div>
         </v-col>
       </v-row>
     </v-container>

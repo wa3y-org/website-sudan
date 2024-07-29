@@ -92,7 +92,7 @@ const ourOrganizationLinks = [
 ];
 
 const ourPagesLinks = [
-  { name: "News", url: "/blog?tags=news" },
+  { name: "News", url: "/blog/news" },
   { name: "Blog", url: "/blog" },
   { name: "Our Projects Map", url: "/our-projects" },
   { name: "Videos", url: "/resources" },
