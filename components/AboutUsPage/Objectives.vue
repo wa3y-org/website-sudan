@@ -5,7 +5,7 @@
 
       <v-row>
         <v-col cols="12" xl="7" lg="6">
-          <div class=" elevation-3 rounded-xl" style="overflow: hidden;">
+          <div class="rounded-xl" :class=" mdAndDown ? 'elevation-0' : 'elevation-3'" style="overflow: hidden;">
             <div v-for="(objective, i) of objectives">
               <v-card class="pa-4" rounded="0" :elevation="0"
                 :color="isSelectedObjective(i) && !mdAndDown ? 'primary' : 'transparent'"
