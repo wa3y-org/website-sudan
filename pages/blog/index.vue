@@ -5,7 +5,7 @@
     </h1>
     <v-container>
       <v-toolbar class="px-4" rounded="lg">
-        <span class="mx-2 text-indigo font-weight-bold">
+        <span class="mx-2 text-indigo font-weight-bold" v-if="mdAndUp">
           <nuxt-link v-for="(topic, i) of topics" :to="`/blog/${topic.name.trim().replaceAll('\s', ' ').replaceAll(' ', '_')}`">
             {{ topic.name }}
             <span class="mx-2 font-weight-black"> | </span>
@@ -50,7 +50,12 @@
 </script>
 
 <script lang="ts" setup>
+
 import { Article } from "@/app/models/article";
+import { useDisplay } from "vuetify";
+
+const { mdAndUp } = useDisplay();
+
 
 const pinnedArticleExample1 = new Article();
 pinnedArticleExample1.author = { name: "Ayman Nageeb" };

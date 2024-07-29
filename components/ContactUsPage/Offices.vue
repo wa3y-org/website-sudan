@@ -9,9 +9,9 @@
       </div>
 
       <v-container fluid class="ma-0 pa-0">
-        <v-row>
-          <v-col cols="12" xxl="6" xl="6" lg="6" md="6">
-            <iframe :src="office.mapSrc" width="100%" height="100%" style="border:0; min-height: 500px;"
+        <v-row class="ma-0 pa-0">
+          <v-col cols="12" xxl="6" xl="6" lg="6" md="6" class="pa-0 ma-0">
+            <iframe :src="office.mapSrc" style="border:0; min-height: 100%; width: 100%; aspect-ratio: 9/7;"
               allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </v-col>
           <v-col>
@@ -23,10 +23,10 @@
 
                 <a v-for="link of office.links" :href="link.link" style="text-decoration: none;">
                   <v-card flat class="mt-1">
-                    <v-card-title>
+                    <v-card-text>
                       <v-icon size="36">{{ link.icon }}</v-icon>
-                      <span class="mx-4">{{ link.name }}</span>
-                    </v-card-title>
+                      <span class="mx-4 font-weight-bold text-title">{{ link.name }}</span>
+                    </v-card-text>
                   </v-card>
                 </a>
               </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="section-container pa-0">
     <v-container fluid class="ma-0 pa-0">
-      <v-row>
+      <v-row class="ma-0 pa-0">
         <v-col class="py-16 px-8 vision-section" cols="12" xl="6" lg="6" md="6">
           <div class="mx-4 my-16" :class="mdAndUp ? 'd-flex align-end justify-end' : ''
             ">
