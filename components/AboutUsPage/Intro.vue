@@ -1,11 +1,10 @@
 <template>
-  <div class="intro ma-0 pa-0" >
-    <v-container fluid class="mb-8 pa-0" >
+  <div class="intro ma-0 pa-0">
+    <v-container fluid class="mb-8 pa-0">
       <v-row class="ma-0 pa-0">
-        <v-col class="py-16 px-8" cols="12" xl="6" lg="6" md="6" >
-          <div class="mx-4 my-16" :class="
-            mdAndUp ? 'd-flex align-end justify-end' : ''
-          ">
+        <v-col class="py-16 px-8" cols="12" xl="6" lg="6" md="6">
+          <div class="mx-4 my-16" :class="mdAndUp ? 'd-flex align-end justify-end' : ''
+            ">
             <div class="d-inline-block" style="max-width: 580px;">
               <h1 class="text-h2 font-weight-bold">
                 <span class="text-indigo font-weight-black">Wa3y</span>
@@ -19,6 +18,9 @@
                 of
                 youth and women to undertake positive and effective roles in their communities, social organizations,
                 professional sectors, and official state institutions.
+              </p>
+              <p class="text-center mt-14">
+                <v-btn to="/contact-us" color="primary" size="x-large">Contact us</v-btn>
               </p>
             </div>
           </div>
