@@ -1,6 +1,7 @@
 <template>
   <div>
-    <coming-soon />
+    <CommunitiesPageIntro />
+    <CommunitiesPageArticle />
   </div>
 </template>
 
