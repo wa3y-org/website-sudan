@@ -1,7 +1,7 @@
 <template>
   <v-hover>
     <template v-slot:default="{ isHovering, props }">
-      <v-card v-bind="props" :elevation="isHovering ? 8 : 2" flat min-height="300" class="mb-8">
+      <v-card to="/resources/a_resource_slug" v-bind="props" :elevation="isHovering ? 8 : 2" flat min-height="300" class="mb-8">
         <v-img src="/public/images/blog_1.jpeg" height="200" cover></v-img>
         <div class="ma-4">
           <v-chip density="compact" variant="tonal" class="mx-1" color="primary">Video</v-chip>
