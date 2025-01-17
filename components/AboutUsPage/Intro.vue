@@ -28,7 +28,7 @@
 
         <v-col class="py-16 px-8 logo-side" v-if="mdAndUp">
           <div class="d-flex align-center fill-height">
-            <v-img class="d-inline-block rounded-xl" src="@/assets/images/image.png" height="300" width="300"></v-img>
+            <v-img class="d-inline-block rounded-xl" src="@/assets/images/logo.png" height="300" width="300"></v-img>
           </div>
         </v-col>
       </v-row>

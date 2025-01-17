@@ -178,6 +178,6 @@ const offices = [
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url('@/assets/images/image.png');
+  background-image: url('@/assets/images/logo.png');
 }
 </style>

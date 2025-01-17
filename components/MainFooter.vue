@@ -8,7 +8,7 @@
             <div class="d-inline-block" style="text-justify: top; vertical-align: top; padding: 65;">
               <nuxt-link to="/">
                 <span>
-                  <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
+                  <v-img rounded="lg" width="80" height="80" src="@/assets/images/logo.png"></v-img>
                 </span>
               </nuxt-link>
               <p class="mt-8">
@@ -88,13 +88,13 @@ const ourOrganizationLinks = [
   { name: "Contact Us", url: "/contact-us" },
   { name: "Our Partners", url: "/our-partners" },
   { name: "Our Communities", url: "/our-communities" },
-  { name: "Our Projects", url: "/our-projects" },
+  // { name: "Our Projects", url: "/our-projects" },  
 ];
 
 const ourPagesLinks = [
   { name: "News", url: "/blog/news" },
   { name: "Blog", url: "/blog" },
-  { name: "Our Projects Map", url: "/our-projects" },
+  // { name: "Our Projects Map", url: "/our-projects" },
   { name: "Videos", url: "/resources" },
   { name: "Podcasts", url: "/resources" },
   { name: "Campaigns", url: "/resources" },

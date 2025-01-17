@@ -6,7 +6,7 @@
         <nuxt-link to="/">
 
           <span>
-            <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
+            <v-img rounded="lg" width="65" height="65" src="@/assets/images/logo.png"></v-img>
           </span>
         </nuxt-link>
         <v-spacer></v-spacer>
@@ -135,7 +135,7 @@ const ourOrganizationLinks = [
   { name: "Contact Us", url: "/contact-us" },
   { name: "Our Partners", url: "/our-partners" },
   { name: "Our Communities", url: "/our-communities" },
-  { name: "Our Projects", url: "/our-projects" },
+  // { name: "Our Projects", url: "/our-projects" },
 ];
 
 const resourcesLinks = [
@@ -173,7 +173,7 @@ watch(() => route.fullPath, close);
   width: 100%;
   height: 100%;
   opacity: 0.1;
-  background-image: url('@/assets/images/image.png');
+  background-image: url('@/assets/images/logo.png');
   background-repeat: no-repeat;
   background-position: -50% 0%;
   background-size: cover;

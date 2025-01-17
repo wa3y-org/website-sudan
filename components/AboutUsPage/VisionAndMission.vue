@@ -10,13 +10,8 @@
                 Vision
               </h1>
               <p class="text-justify mt-8">
-                A Voluntary organization aimed at educating and raising awareness within our communities regarding rights,
-                citizenship issues, and the active role citizens should undertake towards their society and nation, also
-                fostering creative thinking, enhancing positive interaction with cultural and ethnic diversity, combating
-                violence and negative customs, launching social campaigns, providing support, and enhancing the capacities
-                of
-                youth and women to undertake positive and effective roles in their communities, social organizations,
-                professional sectors, and official state institutions.
+                “Inspired citizens; enjoying all their rights, and proud of
+                their cultures and their identity”
               </p>
             </div>
           </div>
@@ -29,13 +24,16 @@
                 Mission
               </h1>
               <p class="text-justify mt-8">
-                A Voluntary organization aimed at educating and raising awareness within our communities regarding rights,
-                citizenship issues, and the active role citizens should undertake towards their society and nation, also
-                fostering creative thinking, enhancing positive interaction with cultural and ethnic diversity, combating
-                violence and negative customs, launching social campaigns, providing support, and enhancing the capacities
-                of
-                youth and women to undertake positive and effective roles in their communities, social organizations,
-                professional sectors, and official state institutions.
+                Waey is working to promote and develop the
+                Sudanese citizen's capacities to face challenges and
+                problems on the way of building a bright future; that’s
+                based on Human rights concepts; the human
+                experiences; and Sudanese cultures; Waey also
+                working to create a learning & dialogue environments,
+                to insure citizen's active participation through
+                organize the communities, promoting team work and
+                team spirit, and by building effective partnerships and
+                alliances to achieve its vision.
               </p>
             </div>
           </div>
@@ -69,10 +67,10 @@ const { mdAndUp } = useDisplay();
 }
 
 .mission-section {
-  background: rgb(237,231,246);
-background: -moz-linear-gradient(135deg, rgba(237,231,246,1) 0%, rgba(126,87,194,0.8596170890231092) 100%);
-background: -webkit-linear-gradient(135deg, rgba(237,231,246,1) 0%, rgba(126,87,194,0.8596170890231092) 100%);
-background: linear-gradient(135deg, rgba(237,231,246,1) 0%, rgba(126,87,194,0.8596170890231092) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ede7f6",endColorstr="#7e57c2",GradientType=1); 
+  background: rgb(237, 231, 246);
+  background: -moz-linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 0.8596170890231092) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 0.8596170890231092) 100%);
+  background: linear-gradient(135deg, rgba(237, 231, 246, 1) 0%, rgba(126, 87, 194, 0.8596170890231092) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ede7f6", endColorstr="#7e57c2", GradientType=1);
 }
 </style>

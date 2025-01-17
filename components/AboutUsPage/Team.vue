@@ -6,9 +6,12 @@
     <v-container class="mt-8">
       <v-row>
         <v-col cols="12" xxl="3" xl="3" lg="4" md="6" v-for="(member, i) of team" :key="member.position + i">
-          <v-img cover :src="member.photo" height="200" style="border: 1px solid #CCC;"></v-img>
-          <h1 class="text-h6 font-weight-black">{{ member.name }}</h1>
-          <p class="text-blue font-weight-bold">{{ member.position }}</p>
+          <div class="text-center">
+            <v-img rounded="circle" class="mx-auto" cover :src="member.photo" height="200" width="200" style="border: 1px solid #CCC;"></v-img>
+            <div class="py-2"></div>
+            <h1 class="text-h6 font-weight-black">{{ member.name }}</h1>
+            <p class="text-blue font-weight-bold">{{ member.position }}</p>
+          </div>
         </v-col>
       </v-row>
     </v-container>

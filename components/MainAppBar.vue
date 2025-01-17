@@ -8,30 +8,30 @@
     <!-- The logo -->
     <nuxt-link to="/">
       <span>
-        <v-img rounded="lg" width="65" height="65" src="@/assets/images/image.png"></v-img>
+        <v-img rounded="lg" width="65" height="65" src="@/assets/images/logo.png"></v-img>
       </span>
     </nuxt-link>
     <v-spacer></v-spacer>
     <!-- Main Navigation Buttons Section -->
     <div v-if="mdAndUp">
-      <v-toolbar color="transparent" height="80">
+      <v-toolbar color="transparent" height="80" >
 
         <v-spacer></v-spacer>
         <nuxt-link to="/about-us">
-          <v-btn size="x-large" rounded="pill" class="px-8" color="primary"
+          <v-btn size="x-large" rounded="pill" class="px-8 font-weight-bold" color="primary"
             prepend-icon="mdi-information-variant-circle-outline">about
             us</v-btn>
         </nuxt-link>
         <span class="mx-1"></span>
         <nuxt-link to="/blog">
-          <v-btn size="x-large" rounded="pill" class="px-8" color="primary"
+          <v-btn size="x-large" rounded="pill" class="px-8 font-weight-bold" color="primary"
             prepend-icon="mdi-invoice-text-outline">blog</v-btn>
         </nuxt-link>
         <span class="mx-1"></span>
-        <nuxt-link to="/our-projects">
-          <v-btn size="x-large" rounded="pill" class="px-8" color="primary"
+        <!-- <nuxt-link to="/our-projects">
+          <v-btn size="x-large" rounded="pill" class="px-8 font-weight-bold" color="primary"
             prepend-icon="mdi-land-fields">projects</v-btn>
-        </nuxt-link>
+        </nuxt-link> -->
       </v-toolbar>
     </div>
     <v-spacer></v-spacer>

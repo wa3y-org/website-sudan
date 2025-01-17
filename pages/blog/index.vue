@@ -6,41 +6,41 @@
     <v-container>
       <v-toolbar class="px-4" rounded="lg">
         <span class="mx-2 text-indigo font-weight-bold" v-if="mdAndUp">
-          <nuxt-link v-for="(topic, i) of topics" :to="`/blog/${topic.name.trim().replaceAll('\s', ' ').replaceAll(' ', '_')}`">
-            {{ topic.name }}
+          <nuxt-link v-for="(topic, i) of topicsList.slice(0, 3)" :to="`/blog/${topic.id}`">
+            {{ topic.title }}
             <span class="mx-2 font-weight-black"> | </span>
           </nuxt-link>
           <v-icon>mdi-dots-horizontal</v-icon>
         </span>
         <v-spacer></v-spacer>
         <NuxtLink to="/blog/all-topics">
-          <v-btn size="large" color="indigo" >Show All Topics</v-btn>
+          <v-btn size="large" color="indigo">Show All Topics</v-btn>
         </NuxtLink>
       </v-toolbar>
-      <div class="d-flex justify-center align-center mt-8">
+      <!-- <div class="d-flex justify-center align-center mt-8">
         <v-divider></v-divider>
         <span class="font-weight-bold text-h6 text-success mx-6">Pinned</span>
         <v-divider></v-divider>
       </div>
-      <blog-page-pinned-article-card v-for="i in 1" :article="pinnedArticleExample1" />
+      <blog-page-pinned-article-card v-for="i in 1" :article="pinnedArticleExample1" /> -->
       <div class="d-flex justify-center align-center mt-4">
         <v-divider></v-divider>
-        <span class="font-weight-bold text-h6 mx-6">Articles</span>
+        <span class="font-weight-bold text-h6 mx-6 border-md pa-3 px-5 rounded-lg">Articles</span>
         <v-divider></v-divider>
       </div>
+      <LoadingFromBackend v-if="loading.isLoading.value" class="my-4" />
       <v-row>
-        <v-col cols="12" xxl="3" xl="4" lg="6" md="6" v-for="i in 4">
-          <BlogPageArticleCard :article="pinnedArticleExample1" />
+        <v-col cols="12" xxl="3" xl="4" lg="6" md="6" v-for="article of articlesList">
+          <BlogPageArticleCard :article="article" />
         </v-col>
       </v-row>
-      <v-row class="my-12">
+      <!-- <v-row class="my-12">
         <v-col>
           <div class="text-center">
-
             <v-btn color="primary" size="x-large">Load More</v-btn>
           </div>
         </v-col>
-      </v-row>
+      </v-row> -->
     </v-container>
   </div>
 </template>
@@ -50,6 +50,7 @@
 </script>
 
 <script lang="ts" setup>
+import type { TArticle, TTopic } from '~/composables/website/index';
 
 import { Article } from "@/app/models/article";
 import { useDisplay } from "vuetify";
@@ -76,6 +77,47 @@ const topics = [
   { name: 'topic two' },
   { name: 'topic three' },
 ]
+
+
+const topicsList = ref<TTopic[]>([])
+
+const loading = useLoading();
+const backendError = useBackendError();
+async function loadTopics() {
+  loading.start();
+  const response = await useBlog().topics.get.all();
+  loading.end();
+
+  if (response.error) {
+    backendError.set(response.error);
+    return;
+  }
+
+  if (response.models) {
+    topicsList.value = response.models;
+  }
+}
+
+const articlesList = ref<TArticle[]>([])
+
+async function loadArticles() {
+  loading.start();
+  const response = await useBlog().articles.get.all();
+  loading.end();
+
+  if (response.error) {
+    backendError.set(response.error);
+    return;
+  }
+
+  if (response.models) {
+    articlesList.value = response.models;
+  }
+}
+onMounted(async () => {
+  await loadTopics();
+  await loadArticles();
+})
 </script>
 
 <style></style>
