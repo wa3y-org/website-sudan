@@ -8,7 +8,7 @@
           </h3>
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
-              <v-btn style="transition: 0.5s;" v-bind="props" color="white" :variant="isHovering ? 'flat' : 'outlined'"
+              <v-btn to="our-projects" style="transition: 0.5s;" v-bind="props" color="white" :variant="isHovering ? 'flat' : 'outlined'"
                 size="x-large">Discover Our Projects</v-btn>
             </template>
           </v-hover>

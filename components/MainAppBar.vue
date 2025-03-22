@@ -25,7 +25,7 @@
         <span class="mx-1"></span>
         <nuxt-link to="/blog">
           <v-btn size="x-large" rounded="pill" class="px-8 font-weight-bold" color="primary"
-            prepend-icon="mdi-invoice-text-outline">blog</v-btn>
+            prepend-icon="mdi-file-document-outline">blog</v-btn>
         </nuxt-link>
         <span class="mx-1"></span>
         <nuxt-link to="/our-projects">
