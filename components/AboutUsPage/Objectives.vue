@@ -1,6 +1,7 @@
 <template>
   <div class="objectives-section py-16">
     <h1 class="text-h2 text-center">Organization Objectives</h1>
+    <h5 class="text-h5 text-center">priorities  from 2024 to 2027</h5>
     <v-container class="my-8">
 
       <v-row>
@@ -16,11 +17,7 @@
                 <v-card-text v-if="mdAndDown" class="text-justify">
                   {{ objective.details }}
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quaerat expedita veritatis accusantium
-                    pariatur libero illum porro, tempore repellendus,
-                    nesciunt optio vero odit maxime saepe ipsum
-                    laboriosam earum dolore quas non?
+                    
                   </p>
                 </v-card-text>
               </v-card>
@@ -37,20 +34,6 @@
                   <v-card-text class="text-justify">
                     <h1 class="mb-2">{{ objective.title }}</h1>
                     {{ objective.details }}
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quaerat expedita veritatis accusantium
-                      pariatur libero illum porro, tempore repellendus,
-                      nesciunt optio vero odit maxime saepe ipsum
-                      laboriosam earum dolore quas non?
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quaerat expedita veritatis accusantium
-                      pariatur libero illum porro, tempore repellendus,
-                      nesciunt optio vero odit maxime saepe ipsum
-                      laboriosam earum dolore quas non?
-                    </p>
                   </v-card-text>
                 </v-card>
               </div>
@@ -67,11 +50,10 @@ import { useDisplay } from "vuetify";
 
 const { mdAndDown } = useDisplay();
 const objectives = [
-  { title: 'Objective one', details: '' },
-  { title: 'Objective Two', details: '' },
-  { title: 'Objective Three', details: '' },
-  { title: 'Objective Four', details: '' },
-  { title: 'Objective Five', details: '' },
+  { title: 'Objective one', details: 'Supporting Sudanese communities inside and outside Sudan humanitarianly, socially and legally through direct and indirect interventTions.' },
+  { title: 'Objective Two', details: 'Strengthening modern civil society and enhancing processes of resistance to the classification of Sudanese civil space.' },
+  { title: 'Objective Three', details: 'Contributing to stopping the war in Sudan, building peace, and promoting peaceful coexistence.' },
+  { title: 'Objective Four', details: 'Building and strengthening regional, local and international partnerships.' },
 ]
 
 const objectiveTab = ref('');

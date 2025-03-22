@@ -29,15 +29,15 @@ const counterDuration = 1000;
 const counterItems = [
   {
     title: "Projects",
-    count: 500
+    count: 50
   },
   {
     title: "Activities",
-    count: 2000
+    count: 200
   },
   {
     title: "Partnership",
-    count: 20
+    count: 30
   },
 ];
 </script>

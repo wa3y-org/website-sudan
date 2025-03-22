@@ -8,7 +8,7 @@
     <!-- The logo -->
     <nuxt-link to="/">
       <span>
-        <v-img rounded="lg" width="65" height="65" src="@/assets/images/logo.png"></v-img>
+        <v-img rounded="lg" width="75" height="75" src="@/assets/images/logo.png"></v-img>
       </span>
     </nuxt-link>
     <v-spacer></v-spacer>
@@ -28,16 +28,30 @@
             prepend-icon="mdi-invoice-text-outline">blog</v-btn>
         </nuxt-link>
         <span class="mx-1"></span>
-        <!-- <nuxt-link to="/our-projects">
+        <nuxt-link to="/our-projects">
           <v-btn size="x-large" rounded="pill" class="px-8 font-weight-bold" color="primary"
             prepend-icon="mdi-land-fields">projects</v-btn>
-        </nuxt-link> -->
+        </nuxt-link>
       </v-toolbar>
     </div>
     <v-spacer></v-spacer>
 
     <!-- Useful tools section -->
-    <v-btn color="success" variant="plain" icon="mdi-translate mdi-24px"></v-btn>
+    <v-menu>
+      <template v-slot:activator="{ props }">
+        <v-btn v-bind="props" color="success" variant="plain" icon="mdi-translate mdi-24px"></v-btn>
+      </template>
+      <v-list>
+        <v-list-item
+          v-for="(local, index) in validLocals"
+          :key="index"
+          :value="index"
+        >
+          <v-list-item-title @click="setLang(local.code)">{{ local.title }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
+    
     <span class="mx-1"></span>
     <v-btn color="black" icon="mdi-menu" @click="megaMenuModal.show" />
   </v-app-bar>
@@ -90,6 +104,21 @@ function useAppBarBgController() {
 
 <script lang="ts" setup>
 import { useDisplay } from "vuetify";
+import { useLocale } from 'vuetify'
+
+const { setLocale } = useI18n()
+
+function setLang(code: "en" | "ar") {
+  setLocale(code)
+
+}
+
+
+const validLocals = [
+  {title: "English", dir: "ltr", code: "en"},
+  {title: "العربية", dir: "rtl", code: "ar"},
+]
+
 const appBarBg = useAppBarBgController().appBarBg;
 
 // mage menu modal controller

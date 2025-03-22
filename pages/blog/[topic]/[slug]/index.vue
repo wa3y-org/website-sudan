@@ -71,7 +71,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { TArticle } from "~/composables/website";
+import type { TArticle } from "~/newsrc/composables/website";
 
 
 

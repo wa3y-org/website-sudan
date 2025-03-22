@@ -50,9 +50,9 @@
 </script>
 
 <script lang="ts" setup>
-import type { TArticle, TTopic } from '~/composables/website/index';
+import type { TArticle, TTopic } from '~/newsrc/composables/website/index';
 
-import { Article } from "@/app/models/article";
+import { Article } from "~/app/models/article";
 import { useDisplay } from "vuetify";
 
 const { mdAndUp } = useDisplay();

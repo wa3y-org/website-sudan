@@ -20,12 +20,12 @@
 
 <script lang="ts" setup>
 const team = [
-  { name: 'Filan Bin Illan', position: 'Founder & CEO', photo: '/images/face4.jpg' },
-  { name: 'Alballolah', position: 'Manager', photo: '/images/face4.avif' },
-  { name: 'António Guterres', position: 'CTO', photo: '/images/face5.webp' },
-  { name: 'Fillanah', position: 'Feminist', photo: '/images/face6.webp' },
-  { name: 'Illanah', position: 'Product', photo: '/images/face7.webp' },
-  { name: 'Silik', position: 'Coordinator', photo: '/images/face2.webp' },
+  { name: 'Zahraa Haydar', position: 'Executive Director', photo: '/images/zahraa.jpeg' },
+  { name: 'Merna Saeed', position: 'HR Manager', photo: '/images/merna.jpeg' },
+  { name: 'Mohamed Khalil ', position: 'Finance manger', photo: '/images/mhmdkhalil.jpeg' },
+  { name: 'Mohamed Alhadi', position: 'Logostic Manger', photo: '/images/mhmalhadi2.jpeg' },
+  { name: 'Ziyad Fadlesaid', position: 'Media Manger', photo: '/images/ziyadprofile.jpeg' },
+  { name: 'Neama Awad', position: 'Programm Manager', photo: '/images/neama.jpg' },
 ]
 </script>
 

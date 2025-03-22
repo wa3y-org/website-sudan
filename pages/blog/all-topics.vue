@@ -31,7 +31,7 @@
 
 <script lang="ts" setup>
 
-import type { TTopic } from '~/composables/website/index';
+import type { TTopic } from '~/newsrc/composables/website/index';
 
 const topicsList = ref<TTopic[]>([])
 

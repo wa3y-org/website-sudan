@@ -43,7 +43,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { TWebsiteResource } from '~/composables/website/resources';
+import type { TWebsiteResource } from '~/newsrc/composables/website/resources';
 
 const tags = ["videos", "podcasts", "book", "report", "others"];
 

@@ -32,34 +32,31 @@
 <script lang="ts" setup>
 const whatWeDo = {
   text: `
-  Due to the powers vested in its Charter and its unique international character, 
-  the United Nations can take action on the issues confronting humanity in the 21st century, 
-  including:
+  Our work priorities from 2024 to 2027:
   `,
   pullets: [
-    'Maintain international peace and security',
-    'Protect human rights',
-    'Deliver humanitarian aid',
-    'Promote sustainable development',
-    'Uphold international law',
+    'Supporting Sudanese communities inside and outside Sudan humanitarianly, socially and legally through direct and indirect interventions.',
+    'Contributing to stopping the war in Sudan, building peace, and promoting peaceful coexistence',
+    'Strengthening modern civil society and enhancing processes of resistance to the classification of Sudanese civil space.',
+    'Building and strengthening regional, local and international partnerships',
   ],
   'carousel-items': [
+    // {
+    //   src: '/images/youth capacity.jpeg',
+    //   text: 'Represents Something',
+    // },
     {
-      src: '/images/visuel-sensibilisation.jpg',
-      text: 'Represents Something',
-    },
-    {
-      src: '/images/c_1.jpeg',
-      text: 'Represents Something',
-
-    },
-    {
-      src: '/images/c_2.jpg',
+      src: '/images/society.jpeg',
       text: 'Represents Something',
 
     },
     {
-      src: '/images/c_3.jpeg',
+      src: '/images/training.jpeg',
+      text: 'Represents Something',
+
+    },
+    {
+      src: '/images/peace.jpeg',
       text: 'Represents Something',
 
     },

@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { BackendError } from "@/app/core/BackendError";
+import { BackendError } from "~/app/core/BackendError";
 
 defineProps({
   backendError: {

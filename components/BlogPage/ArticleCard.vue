@@ -28,8 +28,8 @@
 </template>
 
 <script lang="ts" setup>
-import { Article } from "@/app/models/article";
-import type { TArticle } from "~/composables/website";
+import { Article } from "~/app/models/article";
+import type { TArticle } from "~/newsrc/composables/website";
 const props = defineProps({
   article: {
     type: Object,

@@ -27,11 +27,11 @@
                 <hr class="mb-4"
                   style="width: 6rem; height: 0.3rem; background-color: #da291c; border: 0px; border-radius: 1rem;">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Distinctio ab voluptates totam, hic fuga, nemo iure
-                  quasi odio debitis quae blanditiis quod impedit neque
-                  minima placeat quia vitae aliquam ad!
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Waey Association ( Organization later) is a non-governmental organization established on 2017,  to educate and raise awareness
+                   of our societies towards  varying rights and culture issues such as nationalism, human rights, democracy, active citizen roles; 
+                   sponsoring of creative thinking, strengthening of cultural and ethnic diversity, fighting violence and negative habits as well 
+                   as launching social campaigns and providing support and raising the capacity of youth and women to take an active roles with 
+                   their communities; civil society organizations and government institutions.
                 </p>
               </div>
             </v-col>

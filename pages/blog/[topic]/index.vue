@@ -35,8 +35,8 @@
 </template>
 
 <script lang="ts" setup>
-import { Article } from "@/app/models/article";
-import type { TArticle, TTopic } from "~/composables/website";
+import { Article } from "~/app/models/article";
+import type { TArticle, TTopic } from "~/newsrc/composables/website";
 
 const topicName = useRoute().params.topic.toString();
 

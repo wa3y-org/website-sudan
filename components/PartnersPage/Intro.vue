@@ -13,17 +13,17 @@
         <v-card class="intro-card mx-1" rounded="xl">
           <v-card-text class="px-12">
             <p class="text-h3 mt-8">
-              Build with our <span class="font-weight-bold text-indigo">partners</span>
+              Build with our <span class="font-weight-bold text-indigo">Partners</span>
             </p>
             <hr class="mt-4 mb-6"
               style="width: 9rem; height: 0.6rem; background-color: #da291c; border: 0px; border-radius: 1rem;">
 
-            <p class="mt-4 text-justify">
-              Solutions to achieve the SDGs are being built jointly and disseminated in a crisscross manner throughout the
-              world. Indeed, development entails collective and inclusive action carried out at the proper scale. That’s
-              why we cofinance around half our projects with partners. These partners are not just other development banks
-              : they can be local authorities, NGOs, foundations, or others. Cofinancing helps to multiply the effects,
-              attract other investors, and make the most ambitious projects possible.
+            <p class="mt-4 text-justify text-h6">
+              We achieve the greatest impact through partnerships.
+               That’s why Wa3y collaborates with a wide range of humanitarian,
+                development and peacekeeping partners across the globe, from multinational agencies 
+                to national authorities and local organisations. We combine our knowledge,
+               experience and resources to protect and empower people at risk.
             </p>
           </v-card-text>
         </v-card>
@@ -58,7 +58,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url('/public/images/partners_bg.jpg');
+  background-image: url('/public/images/coveeer.jpeg');
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 50% 100%, 0% 100%);
 }
 

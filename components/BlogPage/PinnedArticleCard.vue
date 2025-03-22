@@ -33,7 +33,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Article } from "@/app/models/article";
+import { Article } from "~/app/models/article";
 defineProps({
   article: {
     type: Article,

@@ -7,7 +7,7 @@
           <div class="d-flex align-center justify-center fill-height">
 
             <iframe style="width: 95%; aspect-ratio: 1;" class="elevation-2 rounded-xl" width="560" height="315"
-              src="https://www.youtube.com/embed/cMz5jX373HQ?si=xa8K1ybUHDnT2CWh" title="YouTube video player"
+              src="https://www.youtube.com/embed/z3tFEGvuRiA?si=qwP0VHVkHjFwovPG" title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

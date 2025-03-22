@@ -25,7 +25,7 @@
                 <v-hover>
                   <template v-slot:default="{ isHovering, props }">
                     <span class="d-inline-block my-2">
-                      <v-icon size="65" v-bind="props" :color="isHovering ? '#12095a' : '#d20015CC'">{{ media.Icon }}
+                      <v-icon size="36" v-bind="props" :color="isHovering ? '#12095a' : '#d20015CC'">{{ media.Icon }}
                       </v-icon>
                     </span>
                     <span class="mx-2"></span>
@@ -65,7 +65,7 @@
             <ul class="links-group">
               <li v-for="(link) of ourOrganizationLinks">
 
-                <nuxt-link class="our-link " :href="link.url">
+                <nuxt-link class="our-link " target="_blank" :href="link.url">
 
                   <span class="mx-2">
                     {{ link.name }}
@@ -101,10 +101,12 @@ const ourPagesLinks = [
 ];
 
 const ourSocialMedia = [
-  { "name": "Email", "Icon": "mdi-email", "url": "" },
-  { "name": "Facebook", "Icon": "mdi-facebook", "url": "" },
-  { "name": "X", "Icon": "mdi-twitter", "url": "" },
-  { "name": "YouTube", "Icon": "mdi-youtube", "url": "" },
+  { "name": "Email", "Icon": "mdi-email", "url": "mailto:mail@wa3y-sd.org" },
+  { "name": "Facebook", "Icon": "mdi-facebook", "url": "https://www.facebook.com/wa3ysd" },
+  { "name": "Instagram", "Icon": "mdi-instagram", "url": "https://www.instagram.com/wa3ysd/" },
+  { "name": "YouTube", "Icon": "mdi-youtube", "url": "https://www.youtube.com/@wa3ysd" },
+  { "name": "TikTok", "Icon": "mdi-youtube", "url": "https://www.tiktok.com/@wa3ysd" },
+  { "name": "X", "Icon": "mdi-twitter", "url": "https://x.com/Wa3ysd" },
 ]
 </script>
 

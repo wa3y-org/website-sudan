@@ -3,11 +3,11 @@
     <v-container>
       <h1 class="text-h3 text-center mb-8 mt-16">The Message</h1>
       <p class="text-justify text-h6 mb-16">
-        The organization works to strengthen and develop the capabilities of Sudanese citizens 
-        to confront challenges and issues in their path towards building a brighter future. 
-        This is based on principles of human rights, local Sudanese experiences, 
-        human values, and cultures. The organization also works on enhancing the learning
-        environment, establishing dialogue, and ensuring active citizen participation.
+       Waey is working to Promote and Develop the Sudanese Citizens Capacities to face Challenges and problems
+        on the way of building a bright future; that is based on human rights concepts; the human experiences;
+        and Sudanese cultures; waey also working to create a learning & dialogue enviromrnts, to citizens active 
+        participation through organize the communities, Promoting team work and team spirit, and by building effective 
+        partnerships and alliance to achieve it is vision.
 
       </p>
       

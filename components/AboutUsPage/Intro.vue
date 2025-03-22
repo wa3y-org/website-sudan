@@ -11,13 +11,13 @@
                 is changing the way people think
               </h1>
               <p class="text-justify mt-8">
-                A Voluntary organization aimed at educating and raising awareness within our communities regarding rights,
-                citizenship issues, and the active role citizens should undertake towards their society and nation, also
-                fostering creative thinking, enhancing positive interaction with cultural and ethnic diversity, combating
-                violence and negative customs, launching social campaigns, providing support, and enhancing the capacities
-                of
-                youth and women to undertake positive and effective roles in their communities, social organizations,
-                professional sectors, and official state institutions.
+                Waey Association ( Organization later) is a non-governmental organization established on 2017,
+                  to educate and raise awareness of our societies towards  varying rights and culture issues
+                   such as nationalism, human rights, democracy, active citizen roles;
+                    sponsoring of creative thinking, strengthening of cultural and ethnic diversity,
+                     fighting violence and negative habits as well as launching social campaigns and providing support
+                      and raising the capacity of youth and women to take an active roles with their communities;
+                       civil society organizations and government institutions.
               </p>
               <p class="text-center mt-14">
                 <v-btn to="/contact-us" color="primary" size="x-large">Contact us</v-btn>
@@ -25,7 +25,6 @@
             </div>
           </div>
         </v-col>
-
         <v-col class="py-16 px-8 logo-side" v-if="mdAndUp">
           <div class="d-flex align-center fill-height">
             <v-img class="d-inline-block rounded-xl" src="@/assets/images/logo.png" height="300" width="300"></v-img>

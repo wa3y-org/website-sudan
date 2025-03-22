@@ -7,30 +7,29 @@
             ">
             <div class="d-inline-block" style="max-width: 580px;">
               <h1 class="text-h2 font-weight-bold">
-                
+
                 We Have a Stunning Community
               </h1>
               <p class="text-justify mt-8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab velit tempora accusamus, 
-                suscipit sed ipsa dignissimos a, consectetur, minima numquam incidunt 
-                corrupti quasi doloremque? Aspernatur similique atque officiis odit nisi.
-              
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab velit tempora accusamus, 
-                suscipit sed ipsa dignissimos a, consectetur, minima numquam incidunt 
-                corrupti quasi doloremque? Aspernatur similique atque officiis odit nisi.
+                Waey's Communities and Social Club:
+                The war in Sudan has produced a bitter reality, the most obvious manifestation of which is the asylum
+                and displacement of huge numbers of Sudanese in search of safety and stability.
+                Unfortunately, their conditions in the asylum and displacement sites were extremely harsh. They came
+                carrying heavy burdens of pain, loss and shock, losing their means of livelihood and being destitute,
+                fleeing to an unknown and dark future.
               </p>
 
             </div>
           </div>
         </v-col>
 
-        <v-col class="py-16 px-8 logo-side" v-if="mdAndUp">
-          <div class="d-flex align-center fill-height">
-            <v-img class="d-inline-block rounded-xl" src="@/assets/images/communities.png" height="300"
-              width="300"></v-img>
-          </div>
+        <v-col class="pa-0 ma-0 logo-side" v-if="mdAndUp">
+          <v-card class="fill-height" rounded="0">
+            <v-img class="d-inline-block" height="100%" width="100%" src="@/assets/images/coveeer.jpeg" cover></v-img>
+          </v-card>
         </v-col>
       </v-row>
+
     </v-container>
   </div>
 </template>
@@ -50,4 +49,5 @@ const { mdAndUp } = useDisplay();
 .logo-side {
   background-color: #5C76E5;
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-}</style>
+}
+</style>

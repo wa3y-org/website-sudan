@@ -1,6 +1,7 @@
 <template>
   <div>
     <CommunitiesPageIntro />
+    <CommunitiesPageSlider />
     <CommunitiesPageArticle />
   </div>
 </template>

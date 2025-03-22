@@ -7,7 +7,7 @@ import {
   BlogTopicsCollection,
   type TArticle,
   type TTopic,
-} from "./";
+} from ".";
 
 export async function getAllBlogTopics() {
   return await backendRequestMultiple<TTopic>(async () => {

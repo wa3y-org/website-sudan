@@ -52,7 +52,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url('/public/images/location.jpg');
+  background-image: url('/public/images/home-bg.jpeg');
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 50% 100%, 0% 100%);
 }
 
