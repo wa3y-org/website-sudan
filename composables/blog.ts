@@ -1,6 +1,7 @@
 import {
   getAllBlogArticles,
   getAllBlogTopics,
+  getArticlesByPage,
   getBlogArticlesByTopic,
   getOneBlogArticle,
   getOneBlogTopic,
@@ -18,6 +19,7 @@ const articles = {
     all: getAllBlogArticles,
     byId: getOneBlogArticle,
     byTopic: getBlogArticlesByTopic,
+    paginated: getArticlesByPage,
   },
 };
 

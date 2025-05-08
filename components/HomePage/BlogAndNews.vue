@@ -1,10 +1,16 @@
 <template>
   <div class="blog-section py-16">
     <h2 class="text-center text-h3 my-8">
-      From Our Blog
+      From Our Blog & News
     </h2>
     <v-container>
+      <LoadingFromBackend v-if="loading.isLoading.value" class="my-4" />
       <v-row>
+        <v-col cols="12" xxl="3" xl="4" lg="6" md="6" v-for="article of articlesList">
+          <BlogPageArticleCard :article="article" />
+        </v-col>
+      </v-row>
+      <!-- <v-row>
         <v-col cols="12" v-for="j in 6" xs="12" sm="12" md="6" lg="4" xxl="3">
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
@@ -34,13 +40,39 @@
             </template>
           </v-hover>
         </v-col>
-      </v-row>
+      </v-row> -->
     </v-container>
   </div>
 </template>
 
 <script lang="ts" setup>
+import type { TArticle } from '~/composables/website';
 
+
+const loading = useLoading();
+const backendError = useBackendError();
+
+const articlesList = ref<TArticle[]>([])
+
+async function loadArticles() {
+  loading.start();
+  const response = await useBlog().articles.get.paginated(1,6)
+  console.log("response", response);
+  alert(response);
+  loading.end();
+
+  if (response.error) {
+    backendError.set(response.error);
+    return;
+  }
+
+  if (response.models) {
+    articlesList.value = response.models.items;
+  }
+}
+onMounted(async () => {
+  await loadArticles();
+})
 </script>
 
 <style scoped>

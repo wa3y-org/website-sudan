@@ -4,7 +4,7 @@
     <home-page-about-us />
     <home-page-what-we-do />
     <home-page-discover-projects />
-    <!-- <home-page-blog-and-news /> -->
+    <home-page-blog-and-news />
     <home-page-org-in-numbers />
     <!-- <home-page-resources /> -->
 

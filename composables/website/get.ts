@@ -23,6 +23,17 @@ export async function getOneBlogTopic(id: string) {
   });
 }
 
+export async function getArticlesByPage(
+  page: number = 1,
+  perPage: number = 10
+) {
+  return await backendRequestMultiple<TArticle>(async () => {
+    return await BlogArticlesCollection.getList(page, perPage, {
+      sort: "-created",
+    });
+  });
+}
+
 export async function getAllBlogArticles() {
   return await backendRequestMultiple<TArticle>(async () => {
     return await BlogArticlesCollection.getFullList({
