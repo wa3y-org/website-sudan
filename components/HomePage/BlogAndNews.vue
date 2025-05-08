@@ -57,8 +57,6 @@ const articlesList = ref<TArticle[]>([])
 async function loadArticles() {
   loading.start();
   const response = await useBlog().articles.get.paginated(1,6)
-  console.log("response", response);
-  alert(response);
   loading.end();
 
   if (response.error) {
