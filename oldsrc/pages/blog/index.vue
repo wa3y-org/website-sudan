@@ -1,0 +1,123 @@
+<template>
+  <div>
+    <h1 class="text-h3 text-center font-weight-black pt-16 pb-8">
+      Wa3y blog
+    </h1>
+    <v-container>
+      <v-toolbar class="px-4" rounded="lg">
+        <span class="mx-2 text-indigo font-weight-bold" v-if="mdAndUp">
+          <nuxt-link v-for="(topic, i) of topicsList.slice(0, 3)" :to="`/blog/${topic.id}`">
+            {{ topic.title }}
+            <span class="mx-2 font-weight-black"> | </span>
+          </nuxt-link>
+          <v-icon>mdi-dots-horizontal</v-icon>
+        </span>
+        <v-spacer></v-spacer>
+        <NuxtLink to="/blog/all-topics">
+          <v-btn size="large" color="indigo">Show All Topics</v-btn>
+        </NuxtLink>
+      </v-toolbar>
+      <!-- <div class="d-flex justify-center align-center mt-8">
+        <v-divider></v-divider>
+        <span class="font-weight-bold text-h6 text-success mx-6">Pinned</span>
+        <v-divider></v-divider>
+      </div>
+      <blog-page-pinned-article-card v-for="i in 1" :article="pinnedArticleExample1" /> -->
+      <div class="d-flex justify-center align-center mt-4">
+        <v-divider></v-divider>
+        <span class="font-weight-bold text-h6 mx-6 border-md pa-3 px-5 rounded-lg">Articles</span>
+        <v-divider></v-divider>
+      </div>
+      <LoadingFromBackend v-if="loading.isLoading.value" class="my-4" />
+      <v-row>
+        <v-col cols="12" xxl="3" xl="4" lg="6" md="6" v-for="article of articlesList">
+          <BlogPageArticleCard :article="article" />
+        </v-col>
+      </v-row>
+      <!-- <v-row class="my-12">
+        <v-col>
+          <div class="text-center">
+            <v-btn color="primary" size="x-large">Load More</v-btn>
+          </div>
+        </v-col>
+      </v-row> -->
+    </v-container>
+  </div>
+</template>
+
+<script>
+
+</script>
+
+<script lang="ts" setup>
+import type { TArticle, TTopic } from '~/oldsrc/composables/website/index';
+
+import { Article } from "~/oldsrc/app/models/article";
+import { useDisplay } from "vuetify";
+
+const { mdAndUp } = useDisplay();
+
+
+const pinnedArticleExample1 = new Article();
+pinnedArticleExample1.author = { name: "Ayman Nageeb" };
+pinnedArticleExample1.title = "Does Aromatherapy Works for Sleep? Maybe, Here's What We Know";
+pinnedArticleExample1.topic = { name: "Sleep Hygiene" };
+pinnedArticleExample1.short_text = `
+   Lorem ipsum dolor sit amet consectetur, 
+   adipisicing elit. Sit fuga, 
+   ipsa explicabo officiis corrupti eligendi repellendus est, 
+   voluptatibus saepe voluptates magnam nihil tempora? 
+   Ipsam facilis animi unde saepe, quisquam cumque.
+`;
+pinnedArticleExample1.updated = '2024-07-25'
+pinnedArticleExample1.cover_image = '/images/visuel-sensibilisation.jpg';
+
+const topics = [
+  { name: 'topic one' },
+  { name: 'topic two' },
+  { name: 'topic three' },
+]
+
+
+const topicsList = ref<TTopic[]>([])
+
+const loading = useLoading();
+const backendError = useBackendError();
+async function loadTopics() {
+  loading.start();
+  const response = await useBlog().topics.get.all();
+  loading.end();
+
+  if (response.error) {
+    backendError.set(response.error);
+    return;
+  }
+
+  if (response.models) {
+    topicsList.value = response.models;
+  }
+}
+
+const articlesList = ref<TArticle[]>([])
+
+async function loadArticles() {
+  loading.start();
+  const response = await useBlog().articles.get.all();
+  loading.end();
+
+  if (response.error) {
+    backendError.set(response.error);
+    return;
+  }
+
+  if (response.models) {
+    articlesList.value = response.models;
+  }
+}
+onMounted(async () => {
+  await loadTopics();
+  await loadArticles();
+})
+</script>
+
+<style></style>
